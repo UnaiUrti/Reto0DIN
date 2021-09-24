@@ -5,12 +5,7 @@
  */
 package helloworldmvc.model;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.ResourceBundle;
 
 /**
  *
@@ -26,22 +21,11 @@ public class FileModelImplementation implements Model{
     @Override
     public String getGreeting() {
         
-        String greeting = null;
+        String greeting;
+        ResourceBundle lector;
         
-        FileReader fr;
-        BufferedReader br;
-    
-        try {
-            fr = new FileReader("Greeting.txt");
-            br = new BufferedReader(fr);
-            
-            greeting = br.readLine();
-            
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(FileModelImplementation.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(FileModelImplementation.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        lector = ResourceBundle.getBundle("helloworldmvc.model.Greeting");
+        greeting = lector.getString("greet");
         
         return greeting;
     }

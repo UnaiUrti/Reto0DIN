@@ -12,4 +12,5 @@ package helloworldmvc.view;
 public interface View {
     
     public void showGreeting(String greeting);
+    
 }

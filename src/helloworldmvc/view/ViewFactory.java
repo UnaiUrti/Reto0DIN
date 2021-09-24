@@ -3,37 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package helloworldmvc.model;
+package helloworldmvc.view;
 
 import java.util.ResourceBundle;
 
 /**
  *
- * @author Unai,Adrian
+ * @author 2dam
  */
-public class ModelFactory {
+public class ViewFactory {
     
     String option;
     ResourceBundle reader;
     
-    public Model getModel(){
-        
-        Model model = null;
+    public View getView(){
+    
+        View view = null;
         
         reader = ResourceBundle.getBundle("helloworldmvc.controller.config");
-        option = reader.getString("MODEL");
+        option = reader.getString("VIEW");
         
-        if(option.equalsIgnoreCase("file")){
-            model = new FileModelImplementation();
-        }else if(option.equalsIgnoreCase("database")){
-            
+        if(option.equalsIgnoreCase("text")){
+            view = new TextViewImplementation();
+        }else if(option.equalsIgnoreCase("swing")){
+            view = new SwingViewImplementation();
         }
         
-        return model;
+        return view;
     }
     
 }
-
-
-//Testeable
-       
