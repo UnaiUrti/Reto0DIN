@@ -5,20 +5,23 @@
  */
 package helloworldmvc.model;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 /**
  *
- * @author Unai,Adrian
+ * @author 2dam
  */
-public class ModelFactory {
+public class ModelFactoryTest {
     
-    public Model getModel(){
-    
-        FileModelImplementation model = new FileModelImplementation();
+    public ModelFactoryTest() {
+    }
+
+    @Test
+    public void testGetModel() {
         
-        return model;
+        
+        
     }
     
 }
-
-
-//Testeable

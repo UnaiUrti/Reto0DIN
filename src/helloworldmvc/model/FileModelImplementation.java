@@ -32,7 +32,7 @@ public class FileModelImplementation implements Model{
         BufferedReader br;
     
         try {
-            fr = new FileReader("Greeting");
+            fr = new FileReader("Greeting.txt");
             br = new BufferedReader(fr);
             
             greeting = br.readLine();
@@ -47,3 +47,5 @@ public class FileModelImplementation implements Model{
     }
     
 }
+
+//Testeable

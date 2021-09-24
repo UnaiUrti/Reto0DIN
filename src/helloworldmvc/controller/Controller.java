@@ -16,6 +16,8 @@ public class Controller {
     
     public void run(Model model, View view){
         
+        view.showGreeting(model.getGreeting());
+        
     }
     
 }
