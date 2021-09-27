@@ -5,6 +5,8 @@
  */
 package helloworldmvc.model;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.ResourceBundle;
 
 /**
@@ -18,14 +20,17 @@ public class FileModelImplementation implements Model{
      * @return 
      */
     
+    private Connection con;
+    private PreparedStatement stat;
+    
     @Override
     public String getGreeting() {
         
         String greeting;
-        ResourceBundle lector;
+        ResourceBundle reader;
         
-        lector = ResourceBundle.getBundle("helloworldmvc.model.Greeting");
-        greeting = lector.getString("greet");
+        reader = ResourceBundle.getBundle("helloworldmvc.model.Greeting");
+        greeting = reader.getString("greet");
         
         return greeting;
     }

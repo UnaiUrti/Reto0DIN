@@ -20,7 +20,7 @@ public class ViewFactory {
     
         View view = null;
         
-        reader = ResourceBundle.getBundle("helloworldmvc.controller.config");
+        reader = ResourceBundle.getBundle("helloworldmvc.controller.data");
         option = reader.getString("VIEW");
         
         if(option.equalsIgnoreCase("text")){

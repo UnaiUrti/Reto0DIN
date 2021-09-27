@@ -20,13 +20,13 @@ public class ModelFactory {
         
         Model model = null;
         
-        reader = ResourceBundle.getBundle("helloworldmvc.controller.config");
+        reader = ResourceBundle.getBundle("helloworldmvc.controller.data");
         option = reader.getString("MODEL");
         
         if(option.equalsIgnoreCase("file")){
             model = new FileModelImplementation();
         }else if(option.equalsIgnoreCase("database")){
-            
+            model = new BDModelImplementation();
         }
         
         return model;
