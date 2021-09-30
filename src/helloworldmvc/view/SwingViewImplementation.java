@@ -55,17 +55,14 @@ public class SwingViewImplementation extends javax.swing.JFrame implements View{
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel lblGreet;
     // End of variables declaration//GEN-END:variables
 
     /**
-     * @return This method shows the greeting in a Swing type window
-     * @param greeting 
+     * This method shows the greeting in a Swing type window
+     * @param greeting The parameter which contains the message
      */
     @Override
     public void showGreeting(String greeting) {

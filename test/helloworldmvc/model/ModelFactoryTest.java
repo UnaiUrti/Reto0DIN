@@ -15,7 +15,7 @@ import org.junit.Test;
 public class ModelFactoryTest {
 
     /**
-     * @return This is the test class for the model factory which tests if the
+     * This is the test class for the model factory which tests if the
      * factory class returns null
      */
     @Test

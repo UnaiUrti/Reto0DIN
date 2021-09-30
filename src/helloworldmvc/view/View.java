@@ -11,8 +11,8 @@ package helloworldmvc.view;
  */
 public interface View {
     /**
-     * @return This is the interface of the view
-     * @param greeting 
+     * This is the interface of the view
+     * @param greeting The parameter which contains the message
      */
     public void showGreeting(String greeting);
     

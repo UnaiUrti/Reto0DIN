@@ -15,9 +15,9 @@ import helloworldmvc.view.View;
 public class Controller {
     /**
      * 
-     * @param model
-     * @param view 
-     * @return This is a node between the View and Model interfaces
+     * @param model The model object
+     * @param view The view object
+     * This is a node between the View and Model interfaces
      */
     public void run(Model model, View view){
         

@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 public class FileModelImplementationTest {
 
     /**
-     * @return This is the test class which tests if the file implementation
+     * This is the test class which tests if the file implementation
      * works right
      */
     @Test

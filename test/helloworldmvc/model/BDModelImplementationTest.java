@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 public class BDModelImplementationTest {
     
     /**
-     * @return This is the test class which tests if the database implementation
+     * This is the test class which tests if the database implementation
      * works right
      */
     @Test

@@ -19,7 +19,7 @@ import java.util.ResourceBundle;
  */
 public class BDModelImplementation implements Model{
     /**
-     * @return Opens the connection with the database and there is a sentence
+     * Opens the connection with the database and there is a sentence
      * to take the message
      */
     private Connection con;
@@ -30,7 +30,7 @@ public class BDModelImplementation implements Model{
     private final String showGreeting = "SELECT * FROM greeting";
 
     /**
-     * @return This method contains the parameters for the implementation
+     * This method contains the parameters for the implementation
      */
     public BDModelImplementation() {
         
@@ -41,9 +41,9 @@ public class BDModelImplementation implements Model{
     }
     
     /**
-     * 
-     * @return This is the method to open the connection with the database
-     * @throws ConnectException 
+     * This is the method to open the connection with the database
+     * @return returns the connection opened
+     * @throws ConnectException It throws an exception if the connection goes wrong
      */
     public Connection openConnection() throws ConnectException {
         
@@ -60,10 +60,11 @@ public class BDModelImplementation implements Model{
     }
     
     /**
-     * @return This is the method to close the connection with the database
-     * @param stat
-     * @param con
-     * @throws ConnectException 
+     * 
+     * This is the method to close the connection with the database
+     * @param stat The prepared statement parameter
+     * @param con The connection parameter
+     * @throws ConnectException It throws an exception if the connection goes wrong
      */
     public void closeConnection(PreparedStatement stat, Connection con) throws ConnectException {
         

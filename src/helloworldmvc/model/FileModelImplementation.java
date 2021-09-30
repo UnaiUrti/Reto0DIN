@@ -15,14 +15,13 @@ import java.util.ResourceBundle;
  */
 public class FileModelImplementation implements Model{
 
+    private Connection con;
+    private PreparedStatement stat;
+    
     /**
      * 
      * @return This method returns the greeting inside a file
      */
-    
-    private Connection con;
-    private PreparedStatement stat;
-    
     @Override
     public String getGreeting() {
         
