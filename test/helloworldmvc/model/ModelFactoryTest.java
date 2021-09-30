@@ -10,10 +10,14 @@ import org.junit.Test;
 
 /**
  *
- * @author 2dam
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class ModelFactoryTest {
 
+    /**
+     * @return This is the test class for the model factory which tests if the
+     * factory class returns null
+     */
     @Test
     public void testGetModel() {
         

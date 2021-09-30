@@ -10,10 +10,14 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 2dam
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class ViewFactoryTest {
 
+    /**
+     * @return This is the test class for the view factory which tests if the
+     * factory class returns null
+     */
     @Test
     public void testSomeMethod() {
         

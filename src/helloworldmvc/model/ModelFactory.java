@@ -9,13 +9,18 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author Unai,Adrian
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class ModelFactory {
     
     String option;
     ResourceBundle reader;
     
+    /**
+     * 
+     * @return This method returns the model object which says from where
+     * to take the greeting
+     */
     public Model getModel(){
         
         Model model = null;

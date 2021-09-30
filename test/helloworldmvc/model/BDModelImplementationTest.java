@@ -12,10 +12,10 @@ import static org.junit.Assert.*;
  *
  * @author UnaiUrtiaga,AdrianFranco
  */
-public class FileModelImplementationTest {
-
+public class BDModelImplementationTest {
+    
     /**
-     * @return This is the test class which tests if the file implementation
+     * @return This is the test class which tests if the database implementation
      * works right
      */
     @Test
@@ -24,10 +24,6 @@ public class FileModelImplementationTest {
         
         String greet = "HELLO WORLD!";
         
-        assertEquals(greet, model.getGreeting());
-        
-        
-        
-    }
-    
+        assertEquals(greet, model.getGreeting());       
+    }  
 }

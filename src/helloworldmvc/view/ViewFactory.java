@@ -9,13 +9,18 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author 2dam
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class ViewFactory {
     
     String option;
     ResourceBundle reader;
     
+    /**
+     * 
+     * @return This method returns the view object which says where to show 
+     * the greeting
+     */
     public View getView(){
     
         View view = null;

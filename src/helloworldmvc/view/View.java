@@ -7,10 +7,13 @@ package helloworldmvc.view;
 
 /**
  *
- * @author Unai,Adrian
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public interface View {
-    
+    /**
+     * @return This is the interface of the view
+     * @param greeting 
+     */
     public void showGreeting(String greeting);
     
 }

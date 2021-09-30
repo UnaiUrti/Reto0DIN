@@ -7,7 +7,7 @@ package helloworldmvc.view;
 
 /**
  *
- * @author 2dam
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class SwingViewImplementation extends javax.swing.JFrame implements View{
 
@@ -63,6 +63,10 @@ public class SwingViewImplementation extends javax.swing.JFrame implements View{
     private javax.swing.JLabel lblGreet;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * @return This method shows the greeting in a Swing type window
+     * @param greeting 
+     */
     @Override
     public void showGreeting(String greeting) {
         

@@ -10,10 +10,15 @@ import helloworldmvc.view.View;
 
 /**
  *
- * @author Unai,Adrian
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class Controller {
-    
+    /**
+     * 
+     * @param model
+     * @param view 
+     * @return This is a node between the View and Model interfaces
+     */
     public void run(Model model, View view){
         
         view.showGreeting(model.getGreeting());

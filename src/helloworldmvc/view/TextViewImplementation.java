@@ -7,10 +7,14 @@ package helloworldmvc.view;
 
 /**
  *
- * @author Unai,Adrian
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class TextViewImplementation implements View{
 
+    /**
+     * @return This method shows the greeting in the console
+     * @param greeting 
+     */
     @Override
     public void showGreeting(String greeting) {
         

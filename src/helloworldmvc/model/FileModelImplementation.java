@@ -11,13 +11,13 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author Unai,Adrian
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class FileModelImplementation implements Model{
 
     /**
      * 
-     * @return 
+     * @return This method returns the greeting inside a file
      */
     
     private Connection con;

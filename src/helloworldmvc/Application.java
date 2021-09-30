@@ -11,12 +11,13 @@ import helloworldmvc.view.ViewFactory;
 
 /**
  *
- * @author 2dam
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class Application {
 
     /**
      * @param args the command line arguments
+     * @return This is the main method which starts the whole program
      */
     public static void main(String[] args) {
 

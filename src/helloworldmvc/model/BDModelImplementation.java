@@ -15,26 +15,36 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author Unai, Adrian
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public class BDModelImplementation implements Model{
-    
+    /**
+     * @return Opens the connection with the database and there is a sentence
+     * to take the message
+     */
     private Connection con;
     private PreparedStatement stat;
     private ResourceBundle configFile;
     private String url, user, pass;
     
     private final String showGreeting = "SELECT * FROM greeting";
-    
+
+    /**
+     * @return This method contains the parameters for the implementation
+     */
     public BDModelImplementation() {
         
         configFile = ResourceBundle.getBundle("helloworldmvc.controller.config");
         url = configFile.getString("Conn");
         user = configFile.getString("DBUser");
-        pass = configFile.getString("DBPass");
-        
+        pass = configFile.getString("DBPass");     
     }
     
+    /**
+     * 
+     * @return This is the method to open the connection with the database
+     * @throws ConnectException 
+     */
     public Connection openConnection() throws ConnectException {
         
         Connection con = null;
@@ -49,6 +59,12 @@ public class BDModelImplementation implements Model{
         
     }
     
+    /**
+     * @return This is the method to close the connection with the database
+     * @param stat
+     * @param con
+     * @throws ConnectException 
+     */
     public void closeConnection(PreparedStatement stat, Connection con) throws ConnectException {
         
         if (stat != null || con != null) {
@@ -63,6 +79,10 @@ public class BDModelImplementation implements Model{
         
     }
     
+    /**
+     * 
+     * @return This method returns the greeting inside the database
+     */
     @Override
     public String getGreeting(){
     
@@ -75,7 +95,7 @@ public class BDModelImplementation implements Model{
         }
            
         try {
-           
+         
             stat= con.prepareStatement(showGreeting);
            
             rs = stat.executeQuery();

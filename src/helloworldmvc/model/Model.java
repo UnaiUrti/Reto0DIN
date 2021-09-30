@@ -7,12 +7,12 @@ package helloworldmvc.model;
 
 /**
  *
- * @author Unai,Adrian
+ * @author UnaiUrtiaga,AdrianFranco
  */
 public interface Model {
     /**
      * 
-     * @return Devuelve el saludo del archivo
+     * @return Returns the files greeting
      */
     public String getGreeting();
     
